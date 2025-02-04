@@ -7,8 +7,8 @@
   --cs-body-line-height: 1.25rem;
   --cs-body-color: #1b1c1d;
   --cs-white: #fff;
-  --cs-surface-tinted-default:#F4F5F6;
-  --cs-blue: #227bb1;
+  --cs-surface-tinted-default: #F4F5F6;
+  --cs-blue: #0070D2;
   --cs-dark: #e8ecf0;
   --cs-dark-rgb: 232, 236, 240;
   --cs-light-rgb: 244, 246, 248;
@@ -60,9 +60,9 @@
   --cs-btn-disabled-border-color: #aeb8c1;
 }
 :root .btn.btn-secondary, :root .btn.icon-btn {
-  --cs-btn-color: #227bb1;
+  --cs-btn-color: #0070D2;
   --cs-btn-bg: transparent;
-  --cs-btn-border-color: #227bb1;
+  --cs-btn-border-color: #0070D2;
   --cs-btn-hover-color: #fff;
   --cs-btn-hover-bg: #005073;
   --cs-btn-hover-border-color: #005073;

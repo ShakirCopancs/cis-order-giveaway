@@ -1,5 +1,4 @@
 .badge {
-  padding: 4px 6px 2px 6px;
   gap: 4px;
   border-radius: 4px;
   font-size: 12px;
@@ -8,7 +7,6 @@
   text-align: center;
 }
 .badge.new-request, .badge.extension-request {
-  padding: 4px 6px 2px 6px;
   gap: 4px;
   border-radius: 4px;
   font-size: 12px;
@@ -18,7 +16,6 @@
   background-color: #ffe6bd;
 }
 .badge.expired-request, .badge.closed {
-  padding: 4px 6px 2px 6px;
   gap: 4px;
   border-radius: 4px;
   font-size: 12px;
@@ -28,7 +25,6 @@
   background-color: #ffdad8;
 }
 .badge.active-request, .badge.extended-request, .badge.badge-in-use {
-  padding: 4px 6px 2px 6px;
   gap: 4px;
   border-radius: 4px;
   font-size: 12px;
@@ -38,7 +34,6 @@
   background-color: #ddf2d8;
 }
 .badge.included-essentials, .badge.open {
-  padding: 4px 6px 2px 6px;
   gap: 4px;
   border-radius: 4px;
   font-size: 12px;
@@ -48,7 +43,6 @@
   background-color: #d7eafc;
 }
 .badge.badge-not-in-use {
-  padding: 4px 6px 2px 6px;
   gap: 4px;
   border-radius: 4px;
   font-size: 12px;
@@ -115,6 +109,11 @@
   padding-right: 1rem;
 }
 
+.padding-LR-20 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .padding-B-24 {
   padding-bottom: 1.5rem;
 }
@@ -178,9 +177,9 @@
   padding-bottom: 1rem;
 }
 
-.padding-TB-24 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.padding-TB-20 {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
 }
 
 .padding-TB-34 {

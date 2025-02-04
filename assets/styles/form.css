@@ -461,7 +461,8 @@ table td {
   display: flex;
   gap: 1rem;
 }
-.alert-section [class^=cs-icon-], .alert-section [class*=" cs-icon-"] {
+.alert-section [class^=cs-icon-],
+.alert-section [class*=" cs-icon-"] {
   font-size: 1.062rem;
 }
 .alert-section.alert-success {
@@ -655,7 +656,8 @@ table td {
   margin-bottom: 15px;
 }
 
-.ui-datepicker-prev, .ui-datepicker-next {
+.ui-datepicker-prev,
+.ui-datepicker-next {
   width: 20px;
   height: 20px;
   top: 4px;
@@ -729,4 +731,17 @@ table td {
   line-height: 16px;
   color: #FFFFFF;
   background: #0070D2;
+}
+
+.form-check-input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d6d6d6;
+  box-shadow: none !important;
+}
+
+.form-check-input[type=checkbox]:checked {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23ffffff" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');
+  background-color: #0070d2;
+  border-color: #0070d2;
 }/*# sourceMappingURL=form.css.map */

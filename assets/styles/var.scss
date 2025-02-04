@@ -7,8 +7,8 @@
   --cs-body-line-height: 1.25rem;
   --cs-body-color: #1b1c1d;
   --cs-white: #fff;
-  --cs-surface-tinted-default:#F4F5F6;
-  --cs-blue: #227bb1;
+  --cs-surface-tinted-default: #F4F5F6;
+  --cs-blue: #0070D2;
   --cs-dark: #e8ecf0;
   --cs-dark-rgb: 232, 236, 240;
   --cs-light-rgb: 244, 246, 248;
@@ -31,6 +31,7 @@
 
   --global-price-banner-bg: #063e56;
   --cs-select-border-color: #1e4471;
+
   .btn {
     --cs-btn-border-radius: 20px;
     --cs-btn-lg-paading-x: 42px;
@@ -42,6 +43,7 @@
     --cs-btn-font-weight: 500;
     --cs-btn-line-height: 1.5;
     --cs-btn-disabled-opacity: 1;
+
     &.btn-primary {
       --cs-btn-color: #fff;
       --cs-btn-bg: #0070d2;
@@ -58,10 +60,12 @@
       --cs-btn-disabled-bg: #aeb8c1;
       --cs-btn-disabled-border-color: #aeb8c1;
     }
-    &.btn-secondary, &.icon-btn {
-      --cs-btn-color: #227bb1;
+
+    &.btn-secondary,
+    &.icon-btn {
+      --cs-btn-color: #0070D2;
       --cs-btn-bg: transparent;
-      --cs-btn-border-color: #227bb1;
+      --cs-btn-border-color: #0070D2;
       --cs-btn-hover-color: #fff;
       --cs-btn-hover-bg: #005073;
       --cs-btn-hover-border-color: #005073;

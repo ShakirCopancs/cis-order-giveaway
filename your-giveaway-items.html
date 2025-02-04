@@ -162,14 +162,14 @@
 
           <!--div empty cart-->
           <div class="product-items-tile p-0">
-            <div class="product-item-head margin-B-16 product-item-head-px ">
+            <div class="product-item-head  product-item-head-px px-4 py-3">
               <h6 class="font-700">Products in Your Cart</h6>
               <div>
                 <ul class="action-btn d-flex item-center list-unstyled">
 
 
                   <li>
-                    <button class="btn icon-btn">+ Expand All</button>
+                    <button class="btn icon-btn">Expand All</button>
                   </li>
                   <li>
                     <a class="btn icon-btn" href="#delete-all">
@@ -180,10 +180,13 @@
               </div>
             </div>
             <!-- Product item 1 -->
-            <div class="product-items-list border-1 rounded-0 padding-TB-24 padding-LR-16">
+            <div
+              class="product-items-list border-1 border-start-0 border-end-0 border-bottom-0 rounded-0 padding-TB-20 padding-LR-20">
               <div class="product-image">
                 <div class="d-flex item-center gap-12">
-                  <input type="checkbox" class="me-1" />
+                  <div class="me-1 ">
+                    <input type="checkbox" class="form-check-input" />
+                  </div>
                   <img src="assets/images/wifi-router.svg" />
                 </div>
               </div>
@@ -240,54 +243,29 @@
                     </ul>
                   </div>
                 </div>
-                <div class="alert-section alert-warning item-start margin-T-16">
-                  <span class="cs-icon-check-outline"></span>
-                  <div class="alert-section-message">
-                    <div class="body-text">
-                      This product is not configured. Click edit to configure
-                      to proceed further.
-                    </div>
-                  </div>
-                </div>
-                <div class="alert-section alert-warning item-start margin-T-16">
-                  <span class="cs-icon-check-outline"></span>
-                  <div class="alert-section-message">
-                    <div class="body-text">
-                      Your have more than 3 configured. Click on the view all
-                    </div>
-                  </div>
-                  <a class="text-link margin-L-auto" href="javascript:void(0);">
-                    View all
-                  </a>
-                </div>
 
-                <div class="alert-accordion">
-                  <div
-                    class="alert-section d-block  alert-warning-weaker border-0 rounded-1 item-start margin-T-16 text-dark"
-                    onclick="toggleAccordion(this)">
-                    <div class="d-flex justify-between align-items-center gap-3">
-                      <span class="cs-icon-check-outline"></span>
-                      <div class="alert-section-message">
-                        <div class="body-text">
-                          Your have more than 3 configured. Click on the view all
-                        </div>
-                      </div>
-                      <div class="margin-L-auto d-flex item-center">
-                        <span class="badge bg-danger rounded-circle">2</span>
-                        <div class="alert-accordion-icon cs-icon-expand "></div>
+
+                <div class="alert alert-warning d-flex align-items-center border-0 mt-4 mb-0" role="alert">
+
+                  <div class="alert-body flex-fill">
+                    <div class="d-flex align-items-center justify-content-between ">
+                      This product is not configured. Click edit to configure to proceed further.
+                      <div class="alert-utility d-flex align-items-center gap-2">
+                        <span class="badge text-bg-warning rounded-circle">2</span>
+                        <button type="button" class="btn p-0 border-0" data-bs-toggle="collapse"
+                          data-bs-target="#alert-list" aria-expanded="false" aria-controls="alert-list">cd</button>
                       </div>
                     </div>
-                    <div class="alert-accordion-content  margin-L-32 mt-3">
-                      <ol class="mb-0">
-                        <li class="mb-2">Please make a selection from Webex Customer Experience Essentials - Named User
-                          - Quantity</li>
-                        <li>Please make a selection from Webex Customer Experience Essentials - Named User - Quantity
-                        </li>
-                      </ol>
-                    </div>
-                  </div>
 
+                    <ol id="alert-list" class="mb-0 bg-white rounded py-3 mt-3 collapse">
+                      <li class="mb-2">Please make a selection from Webex Customer Experience Essentials - Named User
+                        - Quantity</li>
+                      <li>Please make a selection from Webex Customer Experience Essentials - Named User - Quantity
+                      </li>
+                    </ol>
+                  </div>
                 </div>
+
 
 
               </div>
@@ -296,10 +274,13 @@
             <!-- Product item 1 -->
 
             <!-- Product item 2  -->
-            <div class="product-items-list border-1 rounded-0 padding-TB-24 padding-LR-16">
+            <div
+              class="product-items-list border-1 border-start-0 border-end-0 border-bottom-0 rounded-0 padding-TB-20 padding-LR-20">
               <div class="product-image">
                 <div class="d-flex item-center gap-12">
-                  <input type="checkbox" class="me-1" />
+                  <div class="me-1 ">
+                    <input type="checkbox" class="form-check-input" />
+                  </div>
                   <img src="assets/images/wifi-router.svg" />
                 </div>
               </div>

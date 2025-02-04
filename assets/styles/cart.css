@@ -26,8 +26,13 @@
   padding: 8px 15px;
 }
 
-.rounded-1 {
-  border-radius: 4px;
+.alert-utility .cs-icon-chevron {
+  font-size: 0.6rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.alert-utility .btn[aria-expanded=true] .cs-icon-chevron {
+  transform: rotate(-180deg);
 }
 
 h2.cart-heading {

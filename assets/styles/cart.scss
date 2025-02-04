@@ -34,15 +34,21 @@
 
 
 
+.alert-utility {
+    .cs-icon-chevron {
+        font-size: 0.6rem;
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
 
-
-
-
-
-
-.rounded-1 {
-    border-radius: 4px;
+    .btn[aria-expanded="true"] .cs-icon-chevron {
+        transform: rotate(-180deg);
+    }
 }
+
+
+
+
 
 
 

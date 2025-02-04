@@ -32,22 +32,19 @@
 
 .cs-icon-edit-outline:before {
   content: "\e94d";
-  color: #0070d2;
+
 }
 
 .cs-icon-plus:before {
   content: "\e94e";
-  color: #0070d2;
 }
 
 .cs-icon-import:before {
   content: "\e94f";
-  color: #0070d2;
 }
 
 .cs-icon-minus:before {
   content: "\e950";
-  color: #0070d2;
 }
 
 .cs-icon-chevron:before {
@@ -61,12 +58,10 @@
 
 .cs-icon-edit:before {
   content: "\e94b";
-  color: #0070d2;
 }
 
 .cs-icon-print:before {
   content: "\e948";
-  color: #0070d2;
 }
 
 .cs-icon-sign-out:before {
@@ -289,7 +284,7 @@
 
 .cs-icon-guide-me:before {
   content: "\e907";
-  color: #0070d2;
+
 }
 
 .cs-icon-mail:before {

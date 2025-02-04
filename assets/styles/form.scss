@@ -201,7 +201,7 @@ table {
   border: 1px solid var(--cs-border-color);
   width: 100%;
   border-radius: 4px;
-  height: 40px;
+  height: 30px;
   font-size: 14px;
   color: #1b1c1d;
 
@@ -428,6 +428,21 @@ table {
       box-shadow: var(--cs-btn-focus-shadow-rgb);
     }
   }
+    &.btn-outline-primary {
+    background-color: #FFF;
+    border: 1px solid #0070D2;
+    color: #0070D2;
+    font-size: 12px;
+    padding: 4px 16px;
+    line-height: 16px;
+
+    &:hover {
+      background-color: #0070D2;
+      color:#FFF;
+      box-shadow: var(--cs-btn-focus-shadow-rgb);
+    }
+  }
+  
 
   &.btn-text {
     border: none;
@@ -444,6 +459,17 @@ table {
 
     &:hover {
       background-color: var(--cs-btn-secondary-bg);
+      box-shadow: var(--cs-btn-focus-shadow-rgb);
+    }
+  }
+  &.btn-dark-secondary {
+    background-color: #EBEBEB;
+    border: none;
+    color: #8E8E8E;
+    border: 1px solid #EBEBEB;
+
+    &:hover {
+      background-color: #EBEBEB;
       box-shadow: var(--cs-btn-focus-shadow-rgb);
     }
   }

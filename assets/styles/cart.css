@@ -9,11 +9,11 @@
 }
 
 .cart-item-width {
-  width: 70%;
+  width: 70% !important;
 }
 
 .order-summary-secion-width {
-  width: 30%;
+  width: 30% !important;
 }
 
 /* search container start */

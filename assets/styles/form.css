@@ -194,7 +194,7 @@ table td {
   border: 1px solid var(--cs-border-color);
   width: 100%;
   border-radius: 4px;
-  height: 40px;
+  height: 30px;
   font-size: 14px;
   color: #1b1c1d;
 }
@@ -396,6 +396,19 @@ table td {
   background-color: var(--cs-btn-hover-bg);
   box-shadow: var(--cs-btn-focus-shadow-rgb);
 }
+.btn.btn-outline-primary {
+  background-color: #FFF;
+  border: 1px solid #0070D2;
+  color: #0070D2;
+  font-size: 12px;
+  padding: 4px 16px;
+  line-height: 16px;
+}
+.btn.btn-outline-primary:hover {
+  background-color: #0070D2;
+  color: #FFF;
+  box-shadow: var(--cs-btn-focus-shadow-rgb);
+}
 .btn.btn-text {
   border: none;
   color: var(--cs-btn-color);
@@ -408,6 +421,16 @@ table td {
 }
 .btn.btn-secondary:hover {
   background-color: var(--cs-btn-secondary-bg);
+  box-shadow: var(--cs-btn-focus-shadow-rgb);
+}
+.btn.btn-dark-secondary {
+  background-color: #EBEBEB;
+  border: none;
+  color: #8E8E8E;
+  border: 1px solid #EBEBEB;
+}
+.btn.btn-dark-secondary:hover {
+  background-color: #EBEBEB;
   box-shadow: var(--cs-btn-focus-shadow-rgb);
 }
 .btn.btn-disable {

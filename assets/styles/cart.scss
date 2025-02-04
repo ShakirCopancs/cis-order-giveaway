@@ -37,16 +37,24 @@
 }
 
 /* search container start */
-.search-container {
-    position: relative;
-    width: 36px;
-    transition: width 0.3s ease-in-out;
-    border: 1px solid;
-    border-radius: 30px;
-    border-color: transparent;
+.cart-search {
+
+    padding: 16px 24px;
+
+    .form-control {
+        border: 1px solid var(--cs-border-color);
+        font-size: .875rem;
+        padding: 8px 15px;
+
+        // &::placeholder {
+        //     color: var(cs-content-disable-btn);
+        // }
+    }
 }
 
-
+.text-primary {
+    color: var(--cs-link-color) !important;
+}
 
 
 

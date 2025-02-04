@@ -8,8 +8,6 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="stylesheet" href="assets/styles/bootstrap.css" />
   <link rel="stylesheet" href="assets/styles/global.css" />
-
-
 </head>
 
 <body class="body-bg-gray">
@@ -97,59 +95,78 @@
       <!--/ section Sub header-->
       <div class="d-flex flex-row gap-24 w-100">
         <div class="cart-item cart-item-width">
+          <div class="d-flex align-items-center bg-white rounded cart-search mb-3">
+            <div class="flex-fill position-relative ">
+              <input type="text" class="form-control shadow-none rounded-pill"
+                placeholder="Search by SKU Description and Product Family" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+
+              <div class="cart-search-dropdown bg-white rounded-3 position-absolute w-100 shadow z-2  collapse"
+                id="collapseExample">
+                <div class="table-responsive">
+                  <table class="table  align-middle ">
+                    <thead class="table-light">
+                      <tr>
+                        <th>SKU</th>
+                        <th>Product Family</th>
+                        <th>List Price (USD)</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <strong>MS355-48</strong><br>
+                          <small>Meraki MS355 24GE L4 Switch</small>
+                        </td>
+                        <td>Wireless</td>
+                        <td>1,400</td>
+                        <td><button class="btn btn-outline-primary btn-sm">Add</button></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong>MS130-24</strong><br>
+                          <small>Meraki MS130 24GE L4 Switch</small>
+                        </td>
+                        <td>Wireless</td>
+                        <td>1,450</td>
+                        <td><button class="btn btn-outline-primary btn-sm">Add</button></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong>MS125-48</strong><br>
+                          <small>Meraki MS125 24GE L4 Switch</small>
+                        </td>
+                        <td>Wireless</td>
+                        <td>2,100</td>
+                        <td><button class="btn btn-outline-primary btn-sm">Add</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="text-center mt-2">
+                  <a href="#" class="text-primary text-decoration-none">Can't Find? Search and find products and
+                    solutions.</a>
+                </div>
+              </div>
+            </div>
+            <div class="vr mx-3 align-self-auto"></div>
+            <a href="#" class="text-primary text-decoration-none flex-shrink-0">
+              <i class="bi bi-upload"></i> Import Estimate
+            </a>
+
+          </div>
+
+
+
+
           <!--div empty cart-->
           <div class="product-items-tile shadow-sm">
             <div class="product-item-head margin-B-16 product-item-head-px">
               <h6 class="font-700">Products in Your Cart</h6>
               <div>
                 <ul class="action-btn d-flex item-center list-unstyled">
-                  <li>
-                    <div class="search-container" id="searchBox">
-                      <div class="d-flex item-center">
-                        <i class="cs-icon-search search-input-icon" onclick="expandSearch()"></i>
-                        <input type="text" class="search-input" id="searchInput" placeholder="Search and add product"
-                          onfocus="expandSearch()" onblur="collapseSearch()" onclick="toggleDropdown()" />
-                      </div>
-                      <!-- <div class="dropdown">
-                        <div class="dropdown-item">
-                          <div class="d-flex item-center justify-between">
-                            <div class="product-image gap-12 d-flex">
-                              <img src="assets/images/wifi-router.svg">
-                              <div>
-                                <h6 class="font-400">MS355-48</h6>
-                                <h6 class="font-400 body-text-md">Meraki MS355 24GE L4 Switch</h6>
-                              </div>
-                            </div>
-                            <button class="btn btn-secondary rounded-pill">Add</button>
-                          </div>
-                        </div>
-                        <div class="dropdown-item">
-                          <div class="d-flex item-center justify-between">
-                            <div class="product-image gap-12 d-flex">
-                              <img src="assets/images/wifi-router.svg">
-                              <div>
-                                <h6 class="font-400">Catalyst-9136</h6>
-                                <h6 class="font-400 body-text-md">Meraki MS390 24GE L4 Switch</h6>
-                              </div>
-                            </div>
-                            <button class="btn btn-secondary rounded-pill">Add</button>
-                          </div>
-                        </div>
-                        <div class="dropdown-item">
-                          <div class="d-flex item-center justify-between">
-                            <div class="product-image gap-12 d-flex">
-                              <img src="assets/images/wifi-router.svg">
-                              <div>
-                                <h6 class="font-400">Catalyst-9136</h6>
-                                <h6 class="font-400 body-text-md">MMeraki MS390 24GE L4 Switch</h6>
-                              </div>
-                            </div>
-                            <button class="btn btn-secondary rounded-pill">Add</button>
-                          </div>
-                        </div>
-                      </div> -->
-                    </div>
-                  </li>
+
                   <li>
                     <button class="btn icon-btn"><i class="cs-icon-info-outline me-1"></i>Import Estimates</button>
                   </li>
@@ -490,51 +507,11 @@
   <script src="assets/js/modal.js"></script>
   <script src="assets/js/drawer.js"></script>
   <script src="assets/js/script.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#search-input").on("click", function () {
-        if ($("#search-result").hasClass("show-result")) {
-          $("#search-result").removeClass("show-result");
-        } else {
-          $("#search-result").addClass("show-result");
-        }
-      });
-    });
-  </script>
+  <script src="assets/js/bootstrap.bundle.js"></script>
 
-  <script>
-    function expandSearch() {
-      document.getElementById("searchBox").classList.add("expanded");
-      document.querySelector(".dropdown").style.display = "none";
-    }
 
-    function collapseSearch() {
-      setTimeout(() => {
-        document.getElementById("searchBox").classList.remove("expanded");
-        document.querySelector(".dropdown").style.display = "none";
-        document.getElementById("searchBox").classList.remove("dropdown-open"); // Remove class when dropdown closes
-      }, 200);
-    }
 
-    function toggleDropdown() {
-      const dropdown = document.querySelector(".dropdown");
-      const searchBox = document.getElementById("searchBox");
 
-      if (dropdown.style.display === "none" || dropdown.style.display === "") {
-        dropdown.style.display = "block";
-        searchBox.classList.add("dropdown-open"); // Add class when dropdown opens
-      } else {
-        dropdown.style.display = "none";
-        searchBox.classList.remove("dropdown-open"); // Remove class when dropdown closes
-      }
-    }
-  </script>
-  <script>
-    function toggleAccordion(element) {
-      let parent = element.parentElement;
-      parent.classList.toggle("open");
-    }
-  </script>
 </body>
 
 </html>

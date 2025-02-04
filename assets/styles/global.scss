@@ -1103,3 +1103,9 @@ select {
   background-color: #0070d2;
   border-color: #0070d2;
 }
+
+.vr {
+  min-height: 1.8em;
+  background-color: var(--cs-bg-disable-btn);
+  opacity: 1;
+}

@@ -64,12 +64,38 @@ h5.giveaway-subheading {
     font-size: 18px;
 }
 
-.cart-key {
-    font-size: 14px;
+.cart-key {font-size: 14px;
     line-height: 16px;
-    color: #606162;
-}
-
-.border-dashed {
-    border-style: dashed;
+    color: #606162;}
+  .border-dashed{
+  border-style: dashed;
+  }
+  .border-1-5{
+      border-top: 1.5px solid #1B1C1D;
+  }
+  .text-secondary-default{
+  color: #606162;
+  }
+  
+  .cart-search-dropdown{
+  th{
+      font-size: 14px;
+      font-weight: 700;
+      color: #1B1C1D;
+  }
+  td strong{
+      font-size: 14px;
+      font-weight: 500;
+      color: #1B1C1D;
+  }
+  td small{
+      font-size: 14px;
+      font-weight: 400;
+      color: #333;
+  }
+  td{
+      font-size: 14px;
+      font-weight: 400;
+      color: #333;
+  }
 }

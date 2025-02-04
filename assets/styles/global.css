@@ -1812,6 +1812,62 @@ hr {
     opacity: 1;
   }
 }
+.product-items-tile {
+  padding: 16px 0;
+}
+
+.product-items-list {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.product-item-head-px {
+  padding: 0 24px;
+}
+
+.action-btn li::before {
+  height: 14px;
+}
+
+.badge.badge-danger-weaker {
+  background-color: #FFDAD8;
+}
+
+.wrapper {
+  width: 1520px;
+  margin: 0 auto;
+}
+
+.cart-item-width {
+  width: 70%;
+}
+
+.order-summary-secion-width {
+  width: 30%;
+}
+
+/* search container start */
+.search-container {
+  position: relative;
+  width: 36px;
+  transition: width 0.3s ease-in-out;
+  border: 1px solid;
+  border-radius: 30px;
+  border-color: transparent;
+}
+
+.rounded-1 {
+  border-radius: 4px;
+}
+
+#searchBox {
+  border-radius: 30px;
+}
+
+/* search container end */
+/*alert accordion */
 *,
 :after,
 :before {

@@ -10,141 +10,6 @@
   <link rel="stylesheet" href="assets/styles/global.css" />
 
 
-  <style>
-    .product-items-tile {
-      padding: 16px 0;
-    }
-
-    .product-items-list {
-      border-radius: 0;
-      border-left: 0;
-      border-right: 0;
-      border-bottom: 0;
-    }
-
-    .product-item-head-px {
-      padding: 0 24px;
-    }
-
-    .border-2 {
-      border-top: 2px solid;
-    }
-
-    .action-btn li::before {
-      height: 14px;
-    }
-
-    .badge.badge-danger-weaker {
-      background-color: #FFDAD8;
-    }
-
-    .wrapper {
-      width: 1520px;
-      margin: 0 auto;
-    }
-
-    .cart-item-width {
-      width: 70%;
-    }
-
-    .order-summary-secion-width {
-      width: 30%;
-    }
-
-    /* search container start */
-    .search-container {
-      position: relative;
-      width: 36px;
-      transition: width 0.3s ease-in-out;
-      border: 1px solid;
-      border-radius: 30px;
-      border-color: transparent;
-    }
-
-    .search-container.expanded {
-      width: 400px;
-      border-color: #d6d6d6;
-    }
-
-    .search-input-icon {
-      position: absolute;
-      left: 18px;
-    }
-
-    .search-input {
-      width: 100%;
-      padding: 0px 6px 0px 44px;
-      border: transparent;
-      background-color: transparent;
-      height: 32px;
-    }
-
-    .dropdown {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background: #ffffff;
-      border: 1px solid #d6d6d6;
-      border-radius: 0 0 16px 16px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      display: none;
-      overflow: hidden;
-      z-index: 1;
-    }
-
-    .dropdown-item {
-      padding: 12px 16px;
-      cursor: pointer;
-      background-color: #ffffff;
-    }
-
-    .dropdown-item:hover {
-      background-color: transparent;
-    }
-
-    .border-0 {
-      border: 0;
-    }
-
-    .rounded-1 {
-      border-radius: 4px;
-    }
-
-    #searchBox {
-      border-radius: 30px;
-    }
-
-    #searchBox.dropdown-open {
-      border-radius: 16px 16px 0 0;
-      /* Change border-radius when dropdown is open */
-    }
-
-    /* search container end */
-
-
-    /*alert accordion */
-    .alert-accordion-icon {
-      font-size: 16px;
-      margin-left: 10px;
-      transition: transform 0.3s ease;
-    }
-
-    .alert-accordion.open .alert-accordion-icon {
-      transform: rotate(180deg);
-    }
-
-    .alert-accordion-content {
-      background: #fff;
-      padding: 8px 12px;
-      border-radius: 6px;
-      display: none;
-    }
-
-    .alert-accordion.open .alert-accordion-content {
-      display: block;
-    }
-  </style>
 </head>
 
 <body class="body-bg-gray">
@@ -184,29 +49,7 @@
           <div class="value font-500">
             <span class="badge  badge-danger-weaker text-dark">Unsubmitted</span>
           </div>
-          <!-- <ul class="action-btn d-flex item-center list-unstyled">
-              <li>
-                <button class="btn icon-btn">
-                  <span class="cs-icon-print"></span> Print
-                </button>
-              </li>
-              <li>
-                <label class="dropdown">
-                  <div class="dd-button">More</div>
 
-                  <input type="checkbox" class="dd-input" id="test" />
-
-                  <ul class="dd-menu">
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
-                  </ul>
-                </label>
-              </li>
-              <li>
-                <button class="btn btn-secondary">Add More Products</button>
-              </li>
-            </ul> -->
         </div>
         <hr class="margin-TB-16" />
         <div class="d-flex flex-row flex-wrap gap-52 justify-between">
@@ -267,7 +110,7 @@
                         <input type="text" class="search-input" id="searchInput" placeholder="Search and add product"
                           onfocus="expandSearch()" onblur="collapseSearch()" onclick="toggleDropdown()" />
                       </div>
-                      <div class="dropdown">
+                      <!-- <div class="dropdown">
                         <div class="dropdown-item">
                           <div class="d-flex item-center justify-between">
                             <div class="product-image gap-12 d-flex">
@@ -304,7 +147,7 @@
                             <button class="btn btn-secondary rounded-pill">Add</button>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </li>
                   <li>

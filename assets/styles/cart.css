@@ -19,6 +19,7 @@
 
 .badge.badge-danger-weaker {
   background-color: #FFDAD8;
+  color: #1B1C1D;
 }
 
 .wrapper {
@@ -57,4 +58,21 @@
 }
 
 /* search container end */
-/*alert accordion *//*# sourceMappingURL=cart.css.map */
+/*alert accordion */
+h2.cart-heading {
+  font-size: 30px;
+}
+
+h5.giveaway-subheading {
+  font-size: 18px;
+}
+
+.cart-key {
+  font-size: 14px;
+  line-height: 16px;
+  color: #606162;
+}
+
+.border-dashed {
+  border-style: dashed;
+}/*# sourceMappingURL=cart.css.map */

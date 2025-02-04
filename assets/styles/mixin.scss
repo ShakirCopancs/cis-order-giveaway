@@ -1,0 +1,335 @@
+@mixin badge($background-color) {
+    padding: 4px 6px 2px 6px;
+    gap: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    background-color: $background-color;
+  }
+  
+  // Using the mixin for different badge types
+  .badge {
+    @include badge(null); 
+  
+    &.new-request, 
+    &.extension-request {
+      @include badge(#ffe6bd);
+    }
+    
+    &.expired-request,
+    &.closed {
+      @include badge(#ffdad8);
+    }
+  
+    &.active-request,
+    &.extended-request,
+    &.badge-in-use {
+      @include badge(#ddf2d8);
+    }
+  
+    &.included-essentials,
+    &.open {
+      @include badge(#d7eafc);
+    }
+    
+    &.badge-not-in-use {
+      @include badge(#ebebeb);
+    }
+  }
+  
+
+@mixin padding($side, $value) {
+    @if $side == 'X' {
+      padding-left: $value;
+      padding-right: $value;
+    } @else if $side == 'Y' {
+      padding-top: $value;
+      padding-bottom: $value;
+    } @else if $side == 'TB' {
+      padding-top: $value;
+      padding-bottom: $value;
+    } @else if $side == 'LR' {
+      padding-left: $value;
+      padding-right: $value;
+    } @else if $side == 'T' {
+      padding-top: $value;
+    } @else if $side == 'R' {
+      padding-right: $value;
+    } @else if $side == 'B' {
+      padding-bottom: $value;
+    } @else if $side == 'L' {
+      padding-left: $value;
+    } @else {
+      padding: $value;
+    }
+  }
+  
+  @mixin margin($side, $value) {
+    @if $side == 'X' {
+      margin-left: $value;
+      margin-right: $value;
+    } @else if $side == 'Y' {
+      margin-top: $value;
+      margin-bottom: $value;
+    } @else if $side == 'TB' {
+      margin-top: $value;
+      margin-bottom: $value;
+    } @else if $side == 'LR' {
+      margin-left: $value;
+      margin-right: $value;
+    } @else if $side == 'T' {
+      margin-top: $value;
+    } @else if $side == 'B' {
+      margin-bottom: $value;
+    } @else {
+      margin: $value;
+    }
+  }
+
+.padding-10{
+  @include padding(null, 0.625rem);
+}
+
+.padding-24 {
+    @include padding(null, 1.5rem);
+  }
+  
+  .padding-L-0 {
+    @include padding(L, 0);
+  }
+
+  .padding-R-2 {
+    @include padding(R, 0.125rem);
+  }
+  
+  .padding-B-4 {
+    @include padding(B, 0.25rem);
+  }
+  
+  .padding-B-5 {
+    @include padding(B, 0.312rem);
+  }
+  
+  .padding-B-6 {
+    @include padding(B, 0.375rem);
+  }
+  
+  .padding-B-8 {
+    @include padding(B, 0.5rem);
+  }
+  
+  .padding-B-10 {
+    @include padding(B, 0.625rem);
+  }
+  
+  .padding-B-12 {
+    @include padding(B, 0.75rem);
+  }
+  
+  .padding-B-14 {
+    @include padding(B, 0.875rem);
+  }
+  
+  .padding-B-16 {
+    @include padding(B, 1rem);
+  }
+  
+  .padding-B-18 {
+    @include padding(B, 1.125rem);
+  }
+  
+  .padding-LR-16 {
+    @include padding(LR, 1rem);
+  }
+  
+  .padding-B-24 {
+    @include padding(B, 1.5rem);
+  }
+  
+  .padding-B-34 {
+    @include padding(B, 2.125rem);
+  }
+  
+  .padding-T-8 {
+    @include padding(T, 0.5rem);
+  }
+  
+  .padding-T-10 {
+    @include padding(T, 0.625rem);
+  }
+  
+  .padding-T-12 {
+    @include padding(T, 0.75rem);
+  }
+  
+  .padding-T-14 {
+    @include padding(T, 0.875rem);
+  }
+  
+  .padding-T-16 {
+    @include padding(T, 1rem);
+  }
+  
+  .padding-T-24 {
+    @include padding(T, 1.5rem);
+  }
+  
+  .padding-T-32 {
+    @include padding(T, 2rem);
+  }
+
+  .padding-T-36 {
+    @include padding(T, 2.25rem);
+  }
+  
+  .padding-T-40 {
+    @include padding(T, 2.5rem);
+  }
+
+  .padding-T-64 {
+    @include padding(T, 4rem);
+  }
+  
+  .padding-X-16 {
+    @include padding(X, 1rem);
+  }
+  
+  .padding-X-24 {
+    @include padding(X, 1.5rem);
+  }
+  
+  .padding-TB-16 {
+    @include padding(TB, 1rem);
+  }
+  
+  .padding-TB-24 {
+    @include padding(TB, 1.5rem);
+  }
+  
+  .padding-TB-34 {
+    @include padding(TB, 2.125rem);
+  }
+  
+  .margin-X-16 {
+    @include margin(X, 1rem);
+  }
+  
+  .margin-LR-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .margin-L-auto {
+    margin-left: auto;
+  }
+  .margin-R-auto {
+    margin-right: auto;
+  }
+  .margin-L-32 {
+    margin-left:2rem;
+  }
+
+  .margin-TB-12 {
+    @include margin(TB, 0.75rem);
+  }
+
+  .margin-TB-14 {
+    @include margin(TB, 0.875rem);
+  }
+  
+  .margin-TB-16 {
+    @include margin(TB, 1rem);
+  }
+  
+  .margin-TB-18 {
+    @include margin(TB, 1.125rem);
+  }
+  
+  .margin-TB-24 {
+    @include margin(TB, 1.5rem);
+  }
+  
+  .margin-T-4 {
+    @include margin(T, 0.25rem);
+  }
+  
+  .margin-T-8 {
+    @include margin(T, 0.5rem);
+  }
+  
+  .margin-T-10 {
+    @include margin(T, 0.625rem);
+  }
+  
+  .margin-T-12 {
+    @include margin(T, 0.75rem);
+  }
+  
+  .margin-T-16 {
+    @include margin(T, 1rem);
+  }
+  
+  .margin-T-20 {
+    @include margin(T, 1.25rem);
+  }
+  
+  .margin-T-24 {
+    @include margin(T, 1.5rem);
+  }
+
+  .margin-T-32 {
+    @include margin(T, 2rem);
+  }
+
+  .margin-T-64 {
+    @include margin(T, 4rem);
+  }
+ 
+  .margin-B-0 {
+    @include margin(B, 0);
+  }
+  
+  .margin-B-4 {
+    @include margin(B, 0.25rem);
+  }
+  
+  .margin-B-8 {
+    @include margin(B, 0.5rem);
+  }
+  
+  .margin-B-12 {
+    @include margin(B, 0.75rem);
+  }
+  
+  .margin-B-16 {
+    @include margin(B, 1rem);
+  }
+  
+  .margin-B-20 {
+    @include margin(B, 1.25rem);
+  }
+  
+  .margin-B-24 {
+    @include margin(B, 1.5rem);
+  }
+  
+
+  /* Styles for screens 1920px or larger */
+@media (min-width: 1920px) {
+
+  .page-width-1600,
+  .page-width-1260,
+  .wrapper,
+  .container-custom {
+    width: 70% !important;
+  }
+
+  .checkout-section {
+    width: 60% !important;
+  }
+
+  .order-summary-secion {
+    width: 40% !important;
+  }
+}

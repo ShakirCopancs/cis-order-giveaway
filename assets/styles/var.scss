@@ -1,0 +1,94 @@
+:root {
+  --cs-body-font-family: "CiscoSans";
+  --cs-body-font-size: 14px;
+  --cs-medium-font-size: 13px;
+  --cs-small-font-size: 12px;
+  --cs-body-font-weight: 400;
+  --cs-body-line-height: 1.25rem;
+  --cs-body-color: #1b1c1d;
+  --cs-white: #fff;
+  --cs-surface-tinted-default:#F4F5F6;
+  --cs-blue: #227bb1;
+  --cs-dark: #e8ecf0;
+  --cs-dark-rgb: 232, 236, 240;
+  --cs-light-rgb: 244, 246, 248;
+  --cs-link-color: #0070d2;
+  --cs-label-color: #606162;
+  --cs-link-hover-color: #005073;
+  --cs-link-active-color: #059fd9;
+  --cs-link-color-rgb: 34, 123, 177;
+  --cs-link-hover-color-rgb: 34, 123, 177;
+  --cs-selection-color: #d8e6ff;
+  --cs-selection-bg-color: #f7fafc;
+  --cs-border-color: #d6d6d6;
+  --cs-border-active-color: #0070d2;
+  --cs-secondary-color: #6c757d;
+  --cs-page-heading: #19191d;
+  --cs-alert-warning-bg: #f0f7fc;
+  --cs-alert-warning-border: #1990fa;
+  --cs-bg-disable-btn: #ebebeb;
+  --cs-content-disable-btn: #8e8e8e;
+
+  --global-price-banner-bg: #063e56;
+  --cs-select-border-color: #1e4471;
+  .btn {
+    --cs-btn-border-radius: 20px;
+    --cs-btn-lg-paading-x: 42px;
+    --cs-btn-lg-paading-y: 8px;
+    --cs-btn-lg-font-size: 16px;
+    --cs-btn-padding-x: 24px;
+    --cs-btn-padding-y: 3px;
+    --cs-btn-font-size: 14px;
+    --cs-btn-font-weight: 500;
+    --cs-btn-line-height: 1.5;
+    --cs-btn-disabled-opacity: 1;
+    &.btn-primary {
+      --cs-btn-color: #fff;
+      --cs-btn-bg: #0070d2;
+      --cs-btn-border-color: #0070d2;
+      --cs-btn-secondary-bg: #fff;
+      --cs-btn-hover-bg: #00509E;
+      --cs-btn-hover-border-color: #005073;
+      --cs-btn-focus-shadow-rgb: 49, 132, 253;
+      --cs-btn-active-color: #fff;
+      --cs-btn-active-bg: #059fd9;
+      --cs-btn-active-border-color: #059fd9;
+      --cs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --cs-btn-disabled-color: #fff;
+      --cs-btn-disabled-bg: #aeb8c1;
+      --cs-btn-disabled-border-color: #aeb8c1;
+    }
+    &.btn-secondary, &.icon-btn {
+      --cs-btn-color: #227bb1;
+      --cs-btn-bg: transparent;
+      --cs-btn-border-color: #227bb1;
+      --cs-btn-hover-color: #fff;
+      --cs-btn-hover-bg: #005073;
+      --cs-btn-hover-border-color: #005073;
+      --cs-btn-focus-shadow-rgb: 49, 132, 253;
+      --cs-btn-active-color: #fff;
+      --cs-btn-active-bg: #059fd9;
+      --cs-btn-active-border-color: #059fd9;
+      --cs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --cs-btn-disabled-color: #fff;
+      --cs-btn-disabled-bg: #aeb8c1;
+      --cs-btn-disabled-border-color: #aeb8c1;
+    }
+  }
+}
+
+$background: #e74c3c;
+$select-color: #fff;
+$select-background: #c0392b;
+$select-width: 220px;
+$select-height: 40px;
+
+// Override the container max-widths map
+$container-max-width: (
+  sm: 540px,
+  md: 720px,
+  lg: 1140px,
+  xl: 1330px,
+  xxl: 1920px,
+  // Customize this value as needed
+);

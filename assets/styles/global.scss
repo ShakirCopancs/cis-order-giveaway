@@ -48,14 +48,10 @@ body {
     padding-right: 12px;
     position: relative;
     border-right: 1px solid var(--cs-bg-disable-btn);
-    ;
-
     &:last-child {
       border-right: 0;
       padding-right: 0px;
     }
-
-
   }
 }
 
@@ -82,7 +78,6 @@ a {
   padding: 1.5rem;
 }
 
-
 // Breadcrumbs
 .bread-crumbs {
   margin-bottom: 0.937rem;
@@ -103,7 +98,7 @@ a {
       font-weight: 500;
       line-height: 16px;
       position: relative;
-      color: #8E8E8E;
+      color: #8e8e8e;
       padding-right: 16px;
       margin-right: 8px;
 
@@ -139,7 +134,7 @@ a {
     display: flex;
     align-items: center;
     padding: 0 8px;
-    border-left: 1px solid #D6D6D6;
+    border-left: 1px solid #d6d6d6;
     font-size: 0.875rem;
     gap: 5px;
 
@@ -148,7 +143,6 @@ a {
       padding-left: 0;
     }
   }
-
 }
 
 .cursor-pointer {
@@ -170,7 +164,7 @@ a {
 
 // Header style
 .header-surface {
-  background: #0070D2;
+  background: #0070d2;
   padding: 12px 40px;
   display: flex;
   justify-content: space-between;
@@ -190,7 +184,7 @@ a {
     font-size: 14px;
     font-weight: 500;
     line-height: 16.8px;
-    color: #D7EAFC;
+    color: #d7eafc;
     margin-bottom: 5px;
   }
 
@@ -206,7 +200,7 @@ a {
     padding: 10.5px 0;
 
     .avtar {
-      background: #00509E;
+      background: #00509e;
       font-size: 16px;
       font-weight: 700;
       line-height: 24px;
@@ -224,14 +218,14 @@ a {
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
-        color: #F4F5F6;
+        color: #f4f5f6;
       }
 
       h5 {
         font-size: 12px;
         font-weight: 500;
         line-height: 16px;
-        color: #F4F5F6;
+        color: #f4f5f6;
       }
 
       .cs-icon-chevron-up {
@@ -243,7 +237,6 @@ a {
 
         &:before {
           color: #fff;
-
         }
       }
     }
@@ -305,12 +298,12 @@ a {
 .dd-input {
   display: none;
 
-  &+.dd-menu {
+  & + .dd-menu {
     display: none;
   }
 
   &:checked {
-    &+.dd-menu {
+    & + .dd-menu {
       display: block;
     }
   }
@@ -515,7 +508,6 @@ a {
       }
 
       li {
-
         // span.days-left span {
         //   color: #1b1c1d;
         // }
@@ -696,6 +688,7 @@ a {
   justify-content: space-between;
 
   .text-input {
+    height: 30px;
     width: 48px;
     text-align: center;
   }
@@ -704,7 +697,7 @@ a {
 .product-item-desc {
   padding-bottom: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px dashed #D6D6D6;
+  border-bottom: 1px dashed #d6d6d6;
 }
 
 .product-addon-desc {
@@ -775,7 +768,6 @@ a {
   width: 38%;
 }
 
-
 .cart-item {
   width: 60%;
 
@@ -805,9 +797,9 @@ a {
 
 .product-img {
   border: 3px solid #fff;
-  box-shadow: 0px 0px 4px 0px #0000001A;
+  box-shadow: 0px 0px 4px 0px #0000001a;
   border-radius: 8px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   width: 86px;
   height: 70px;
   display: flex;
@@ -875,7 +867,6 @@ a {
     &:nth-child(even) {
       background-color: #f4f5f6;
     }
-
   }
 
   th {
@@ -990,7 +981,8 @@ select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9.00005 14.0126L1.9463 6.27263C1.73818 6.042 1.75505 5.68763 1.98568 5.4795C2.2163 5.27138 2.57068 5.28825 2.7788 5.51888L9.00005 12.342L15.2213 5.51888C15.4294 5.28825 15.7894 5.27138 16.0144 5.4795C16.245 5.68763 16.2619 6.042 16.0538 6.27263L9.00005 14.007V14.0126Z" fill="%23606162"/></svg>') no-repeat right 10px center;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9.00005 14.0126L1.9463 6.27263C1.73818 6.042 1.75505 5.68763 1.98568 5.4795C2.2163 5.27138 2.57068 5.28825 2.7788 5.51888L9.00005 12.342L15.2213 5.51888C15.4294 5.28825 15.7894 5.27138 16.0144 5.4795C16.245 5.68763 16.2619 6.042 16.0538 6.27263L9.00005 14.007V14.0126Z" fill="%23606162"/></svg>')
+    no-repeat right 10px center;
   background-size: 16px;
   color: var(--cs-body-color);
   padding: 10px 16px;
@@ -1109,17 +1101,14 @@ select {
 .alert {
   color: var(--cs-body-color);
 
-
-
   &.alert-warning {
-    background-color: #FEF7EC;
+    background-color: #fef7ec;
   }
 }
 
 .badge {
-
   &.text-bg-warning {
-    background-color: #C6800F !important;
+    background-color: #c6800f !important;
     color: #fff !important;
   }
 }

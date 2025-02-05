@@ -399,6 +399,7 @@ table td {
   height: 40px;
   font-size: 14px;
   color: #1b1c1d;
+  position: relative;
 }
 .text-input:hover {
   border-color: #8e8e8e;
@@ -407,8 +408,10 @@ table td {
   border-color: #8e8e8e;
   outline: 2px solid #0070d2;
 }
-.text-input .quantity-input {
-  height: 30px;
+.text-input .input-icon-right {
+  position: absolute;
+  right: 14px;
+  top: 15px;
 }
 
 .search-lg input {
@@ -1966,6 +1969,22 @@ body {
 }
 body.body-bg-gray {
   background-color: #f4f5f6;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-30 {
+  font-size: 30px;
 }
 
 .action-btn li {

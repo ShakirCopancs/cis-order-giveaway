@@ -6,7 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="assets/styles/global.css" />
-    <!-- <link rel="stylesheet" href="assets/styles/bootstrap.css" /> -->
+    <link rel="stylesheet" href="assets/styles/bootstrap.css" />
+    <style>
+      .border-dashed {
+        border: 0;
+        border-right: 1px dashed #d6d6d6;
+      }
+      .form-filled-data {
+        height: auto;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+      }
+
+      .form-unfill {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+      }
+
+      .active .form-filled-data {
+        height: 0;
+      }
+
+      .active .form-unfill {
+        height: auto;
+      }
+      .input-textarea {
+        border: 1px solid var(--cs-border-color);
+        width: 100%;
+        border-radius: 4px;
+        font-size: 14px;
+        color: #1b1c1d;
+        padding: 10px 16px;
+        resize: none;
+        height: 80px !important;
+      }
+    </style>
   </head>
 
   <body class="body-bg-gray">
@@ -30,220 +65,444 @@
         ></span>
         <div class="d-flex flex-column">
           <h6>Cisco Commerce</h6>
-          <h3>Orders</h3>
+          <h3 class="mb-0">Orders</h3>
         </div>
       </div>
     </header>
     <!-- / Header-->
 
     <div class="illustrations">
-      <div class="illustration-header"></div>
-      <div class="illustration-footer"></div>
       <!--div wrapper begin-->
-      <div class="wrapper">
+      <div class="wrapper px-4">
         <!--div page heading-->
-        <h2 class="padding-B-12 padding-T-36">Order Summary</h2>
+        <h2 class="padding-B-12 padding-T-36 fw-medium mb-0">Checkout</h2>
         <!--/ div page heading-->
         <!--section Sub header-->
-        <section class="d-flex flex-column header__sub-header margin-B-24">
-          <div class="d-flex flex-row justify-between">
-            <div><h3>Giveaway - 93159809</h3></div>
+        <section class="d-flex flex-column header__sub-header px-0 margin-B-24">
+          <div class="d-flex flex-row justify-between px-4">
+            <div>
+              <h3 class="d-flex align-items-center gap-2 mb-0 fs-18">
+                Giveaway - 93159809
+                <span class="badge active-request text-dark">Unsubmitted</span>
+              </h3>
+            </div>
             <ul class="action-btn d-flex item-center list-unstyled">
               <li>
                 <button class="btn icon-btn">
-                  <span class="cs-icon-print"></span> Print
+                  <span class="cs-icon-print"></span> Go to Cart
                 </button>
-              </li>
-              <li>
-                <label class="dropdown">
-                  <div class="dd-button">More</div>
-
-                  <input type="checkbox" class="dd-input" id="test" />
-
-                  <ul class="dd-menu">
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
-                  </ul>
-                </label>
-              </li>
-              <li>
-                <button class="btn btn-secondary">Add More Products</button>
               </li>
             </ul>
           </div>
           <hr class="margin-TB-16" />
-          <div class="d-flex flex-row flex-wrap gap-52">
+          <div class="d-flex flex-row flex-wrap gap-52 justify-content-between px-4">
             <div>
               <div class="key">Requested By</div>
-              <div class="value font-500">Matt Steve</div>
+              <div class="value font-500">Maria Roark</div>
             </div>
             <div>
               <div class="key">Web Order ID</div>
               <div class="value font-500">93159809</div>
             </div>
             <div>
-              <div class="key">Account Name</div>
-              <div class="value font-500">Metlife</div>
-            </div>
-            <div>
-              <div class="key">Status</div>
-              <div class="value font-500">
-                <span class="badge active-request">Not Submitted</span>
-              </div>
+              <div class="key">Customer Name</div>
+              <div class="value">GOOGLE INTERNATIONAL LLC</div>
             </div>
             <div>
               <div class="key">Reason Code</div>
-              <div class="value font-500">End Customer Giveaway</div>
+              <div class="value">Corporate Social Responsibility (CSR)</div>
             </div>
             <div>
               <div class="key">Country</div>
-              <div class="value font-500">United States</div>
+              <div class="value">United States</div>
+            </div>
+            <div>
+              <div class="key">Program type</div>
+              <div class="value">GIVEAWAY</div>
+            </div>
+            <div class="pe-4">
+              <div class="key">Created On</div>
+              <div class="value">28-Jan-2025</div>
             </div>
           </div>
         </section>
         <!--/ section Sub header-->
         <!--div flex row-->
-        <div class="d-flex flex-row gap-24">
-          <section class="checkout-section">
+        <div class="d-flex">
+          <section class="checkout-section me-3 w-75">
             <!--div step 1-->
-            <div class="checkout-form" id="checkoutstep2">
-              <div class="d-flex flex-row gap-24">
-                <div>
-                  <div class="checkout-list list-active">
-                    <h5><span>1</span></h5>
-                  </div>
+            <div class="checkout-form py-3">
+              <div class="checkout-form-header d-flex gap-3 align-items-center">
+                <span class="checkout-form-number">1</span>
+                <h5 class="mb-0 fw-normal">Shipping Address and Contact</h5>
+                <div class="form-action-btn ms-auto">
+                  <a class="text-link edit-form-btn" href="#delete-all">
+                    <i class="cs-icon-edit-outline me-1"></i> Edit
+                  </a>
                 </div>
-                <!--div steps inner-->
-                <div class="w-full">
-                  <div class="d-flex item-center justify-between">
-                    <div class="padding-T-12">
-                      <h5>End Customer Address</h5>
-                    </div>
-                    <!--Edit section-->
-                    <div class="d-flex item-center gap-24">
-                      <button
-                        type="button"
-                        class="cs-icon-chevron-up down-chevrons"
-                        onclick="downChevrons('checkoutstep2')"
-                      ></button>
-                    </div>
-                    <!--Edit section-->
-                  </div>
-                  <form>
-                    <div class="account-details-tile margin-T-20">
-                      <h5 class="padding-B-6">Metlife</h5>
-                      <div class="body-text">
-                        132 Turnpike Road, Suite 300<br />Southborough, MA,
-                        01772<br />United States
+              </div>
+              <div class="checkout-form-body ps-5 mt-3">
+                <div class="form-filled-data">
+                  <div class="d-flex">
+                    <div class="border-dashed w-50 me-4">
+                      <h6 class="fw-normal">Metlife Inc</h6>
+                      <p class="value m-0 mb-1">
+                        4227 Surles Court, Research Triangle Park,<br />
+                        Chalmers, North Carolina, 27703,<br />
+                        United States
+                      </p>
+                      <div class="pt-2">
+                        <div class="d-flex">
+                          <div>
+                            <label for="" class="fs-14">Site ID</label>
+                            <span class="body-text-md  ms-1"
+                              >1034306009</span
+                            >
+                          </div>
+                          <span class="border-dashed my-1 mx-2"></span>
+                          <div>
+                            <label for="" class="fs-14">Campus</label>
+                            <span class="body-text-md  ms-1"
+                              >1018974070</span
+                            >
+                          </div>
+                        </div>
+                        <div>
+                          <label for="" class="fs-14">Parent Company</label>
+                          <span class="body-text-md  ms-1"
+                            >Metlife Inc (45055217)</span
+                          >
+                        </div>
                       </div>
                     </div>
-                    <!-- / Customer details tile-->
-                  </form>
+                    <div>
+                      <h6 class="fw-normal">Olivia Brown</h6>
+                      <div>
+                        <a
+                          href="olib@metlife.com"
+                          class="text-link link-underline link-underline-opacity-0 fs-14 mb-1"
+                          >olib@metlife.com</a
+                        >
+                      </div>
+                      <div>
+                        <a
+                          href="tel:+1-508 922-6032"
+                          class="text-link link-underline link-underline-opacity-0 fs-14"
+                          >+1-508 922-6032</a
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!--/ div steps inner -->
+                <div class="form-unfill">
+                  <div>
+                    <label for="" class="body-text-md   mb-1"
+                      >Search Addresses</label
+                    ><br />
+                    <div class="text-input d-flex gap-2 align-items-center">
+                      <input
+                        type="text"
+                        class="border-0 bg-transparent h-100 flex-fill"
+                        placeholder="Search by Company Name, Mobile No, Email ID."
+                      />
+                      <i class="cs-icon-print"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <hr class="flex-fill" />
+                    <span class="mx-2 fs-12">OR</span>
+                    <hr class="flex-fill" />
+                  </div>
+                  <div class="d-flex flex-column gap-3 mb-4">
+                    <h5 class="mb-0 fw-normal">Address</h5>
+                    <div>
+                      <label for="" class="body-text-md  mb-1 asterisk"
+                        >Company Name</label
+                      >
+                      <input type="text" class="text-input" value="K&L Gates" />
+                    </div>
+                    <div>
+                      <label for="" class="body-text-md  mb-1"
+                        >Street Address</label
+                      >
+                      <input
+                        type="text"
+                        class="text-input"
+                        value="155 Bellwood Drive. Suite 104."
+                      />
+                    </div>
+                    <div class="d-flex gap-3">
+                      <div class="w-100">
+                        <label for="" class="body-text-md  mb-1 asterisk"
+                          >City</label
+                        >
+                        <input
+                          type="text"
+                          class="text-input"
+                          value="K&L Gates"
+                        />
+                      </div>
+                      <div class="w-100">
+                        <label for="" class="body-text-md  mb-1 asterisk"
+                          >State/Province/Region</label
+                        >
+                        <input
+                          type="text"
+                          class="text-input"
+                          value="K&L Gates"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <div class="w-100">
+                        <label for="" class="body-text-md  mb-1 asterisk"
+                          >Country</label
+                        >
+                        <div class="text-input d-flex gap-2 align-items-center">
+                          <input
+                            type="text"
+                            class="border-0 bg-transparent h-100 flex-fill"
+                            value="United States"
+                          />
+                          <i class="cs-icon-print"></i>
+                        </div>
+                      </div>
+                      <div class="w-100">
+                        <label for="" class="body-text-md  mb-1 asterisk"
+                          >Postal/ZIP Code</label
+                        >
+                        <input type="text" class="text-input" value="06274" />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h5 class="mb-0 fw-normal mb-3">Contact</h5>
+                    <div class="d-flex gap-3">
+                      <div class="w-100">
+                        <label for="" class="body-text-md  mb-1 asterisk"
+                          >Name</label
+                        >
+                        <input
+                          type="text"
+                          class="text-input"
+                          value="Olivia Brown"
+                        />
+                      </div>
+                      <div class="w-100">
+                        <label for="" class="body-text-md  mb-1 astrick"
+                          >Email ID</label
+                        >
+                        <input
+                          type="text"
+                          class="text-input"
+                          value="jkimil@westcomstor.com"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="w-50 pe-2 mt-3">
+                        <label for="" class="body-text-md  mb-1 astrick"
+                          >Mobile Number</label
+                        >
+                        <input
+                          type="text"
+                          class="text-input"
+                          value="+1-508 922-6032"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center mt-3">
+                      <input
+                        type="checkbox"
+                        class="form-check-input mt-0"
+                        id="saveaddress"
+                      />
+                      <label for="saveaddress" class="fs-14"
+                        >Save the address for future use</label
+                      >
+                    </div>
+                    <div class="btn-groups mt-4">
+                      <button
+                        class="btn-default btn-outline-md me-2 form-cancel"
+                      >
+                        Cancel
+                      </button>
+                      <button class="btn-default btn-primary-md form-cancel">
+                        Save
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <!--/ div step 1-->
-
+            <div class="sep-dashed"></div>
             <!--div step 2-->
-            <div class="checkout-form" id="checkoutstep1">
-              <div class="d-flex flex-row gap-24">
-                <div>
-                  <div class="checkout-list list-active">
-                    <h5><span>2</span></h5>
+            <div class="checkout-form py-3">
+              <div class="checkout-form-header d-flex gap-3 align-items-center">
+                <span class="checkout-form-number">2</span>
+                <h5 class="mb-0 fw-normal">Delivery Date</h5>
+                <div class="form-action-btn ms-auto">
+                  <a class="text-link edit-form-btn" href="#delete-all">
+                    <i class="cs-icon-edit-outline me-1"></i> Edit
+                  </a>
+                </div>
+              </div>
+              <div class="checkout-form-body ps-5 mt-3">
+                <div class="form-filled-data">
+                  <span class="mb-2">03/12/2025</span><br />
+                </div>
+                <div class="form-unfill">
+                  <div class="col-3">
+                    <label for="" class="body-text-md  mb-1 astrick"
+                      >Select the preferred delivery date</label
+                    >
+                    <input
+                      type="date"
+                      class="text-input mb-1"
+                      value="K&L Gates"
+                    />
+                  </div>
+                  <div class="fs-12 text-secondary">
+                    Initial date two days ahead. You can chooses up to 180 days.
+                  </div>
+                  <div class="btn-groups mt-2">
+                    <button class="btn-default btn-outline-md me-2 form-cancel">
+                      Cancel
+                    </button>
+                    <button class="btn-default btn-primary-md form-cancel">
+                      Save
+                    </button>
                   </div>
                 </div>
-                <!--div steps inner-->
-                <div class="w-full">
-                  <div class="d-flex item-center justify-between">
-                    <div class="padding-T-12">
-                      <h5>Shipping Address</h5>
-                    </div>
-                    <!--Edit section-->
-                    <div class="d-flex item-center gap-24">
-                      <button
-                        type="button"
-                        class="cs-icon-chevron-up down-chevrons"
-                        onclick="downChevrons('checkoutstep1')"
-                      ></button>
-                    </div>
-                    <!--Edit section-->
-                  </div>
-                  <form>
-                    <div class="account-details-tile margin-T-20">
-                      <h6 class="padding-B-12">Olivia Kurl</h6>
-                      <div class="d-flex item-center gap-24">
-                        <div class="d-flex item-center gap-8">
-                          <span class="cs-icon-mail"></span
-                          ><span>olivia.kurl@metlife.com</span>
-                        </div>
-                        <div class="d-flex item-center gap-8">
-                          <span class="cs-icon-phone"></span
-                          ><span>+1-508 922-6032</span>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- / Account details tile-->
-                  </form>
-                </div>
-                <!--/ div steps inner -->
               </div>
             </div>
             <!--/ div step 2-->
+            <div class="sep-dashed"></div>
 
             <!--div step 3-->
-            <div class="checkout-form" id="checkoutstep4">
-              <div class="d-flex flex-row gap-24">
-                <div>
-                  <div class="checkout-list list-active">
-                    <h5><span>3</span></h5>
-                  </div>
+            <div class="checkout-form py-3">
+              <div class="checkout-form-header d-flex gap-3 align-items-center">
+                <span class="checkout-form-number">3</span>
+                <h5 class="mb-0 fw-normal">Order Submission Notification</h5>
+                <div class="form-action-btn ms-auto">
+                  <a class="text-link edit-form-btn" href="#delete-all">
+                    <i class="cs-icon-edit-outline me-1"></i> Edit
+                  </a>
                 </div>
-                <!--div steps inner-->
-                <div class="w-full">
-                  <div class="d-flex item-center justify-between">
-                    <div>
-                      <h5>Delivery Date</h5>
-                    </div>
-                    <!--Edit section-->
-                    <div class="d-flex item-center gap-24">
-                      <button
-                        type="button"
-                        class="cs-icon-chevron-up down-chevrons"
-                        onclick="downChevrons('checkoutstep4')"
-                      ></button>
-                    </div>
-                    <!--Edit section-->
-                  </div>
-                  <form>
-                    <div>
-                      <div class="account-details-tile margin-T-20">
-                        <h6 class="padding-B-12">Preferred delivery date</h6>
-                        <div class="d-flex item-center gap-24">
-                          <div class="d-flex item-center gap-8">
-                            <span>Jun 09, 2024</span>
+              </div>
+              <div class="checkout-form-body ps-5 mt-3">
+                <div class="form-filled-data">
+                  <div class="d-flex">
+                    <div class="border-dashed w-50 me-4">
+                      <h6 class="fw-normal">Ashish Das</h6>
+                      <a
+                        class="text-link m-0 mb-1 fs-14 link-underline-opacity-0 link-underline"
+                      >
+                        ashdas@cisco.com
+                      </a>
+                      <div class="pt-2">
+                        <div class="d-flex">
+                          <div>
+                            <label for="" class="fs-14"
+                              >Proxy for Manager</label
+                            >
+                            <span class="fs-14 ms-1">--</span>
                           </div>
                         </div>
+                        <div>
+                          <label for="" class="fs-14">Proxy for Finance</label>
+                          <span class="fs-14 ms-1">--</span>
+                        </div>
                       </div>
-                      <!-- / Account details tile-->
                     </div>
-                  </form>
+                    <div>
+                      <h6 class="fw-normal">Additional Notification</h6>
+                      <div>
+                        <p class="value m-0">--</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!--/ div steps inner -->
+                <div class="form-unfill">
+                  <label for="" class="body-text-md  mb-2"
+                    >Who should Cisco contact if there is a problem with
+                    Order?</label
+                  >
+                  <div class="d-flex gap-3 mb-3">
+                    <div class="w-100">
+                      <label for="" class="body-text-md  mb-1 astrick"
+                        >Name</label
+                      >
+                      <input
+                        type="text"
+                        class="text-input"
+                        value="Ashish Das"
+                      />
+                    </div>
+                    <div class="w-100">
+                      <label for="" class="body-text-md  mb-1 astrick"
+                        >Email ID</label
+                      >
+                      <input
+                        type="text"
+                        class="text-input"
+                        value="ashdas@cisco.com"
+                      />
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="w-100">
+                      <label for="" class="body-text-md  mb-1"
+                        >Proxy Approvers for Giveaway (Manager)</label
+                      >
+                      <input
+                        type="text"
+                        class="text-input"
+                        placeholder="Manager Proxy (e.g. - jsmith)"
+                      />
+                    </div>
+                    <div class="w-100">
+                      <label for="" class="body-text-md  mb-1 astrick"
+                        >Proxy Approvers for Giveaway (Finance)</label
+                      >
+                      <input
+                        type="text"
+                        class="text-input"
+                        placeholder="Finance Proxy (e.g. -jsmith)"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label for="" class="body-text-md  mb-1 mt-3"
+                      >Send additional order submission notifications to the
+                      following emails addresses
+                    </label>
+                    <textarea class="input-textarea"></textarea>
+                    <span class="fs-12 text-secondary">
+                      Note: Multiple email addresses can be entered using comma.
+                      Format ex xxx@yyy.com, aaa@bbb.com
+                    </span>
+                  </div>
+                  <div class="btn-groups mt-4">
+                    <button class="btn-default btn-outline-md me-2 form-cancel">
+                      Cancel
+                    </button>
+                    <button class="btn-default btn-primary-md form-cancel">
+                      Save
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
             <!--/ div step 3-->
           </section>
 
-          <section class="order-summary-secion">
+          <section class="order-summary-secion ps-3">
             <!--div Order summary-->
-            <div class="order-summary shadow-sm">
-              <div
-                class="d-flex flex-row justify-between item-center padding-B-24"
-              >
-                <h5>Order Summary</h5>
-                <a class="text-link" href="javascript:void(0)">Edit</a>
+            <div class="order-summary shadow-sm py-3">
+              <div class="padding-B-24">
+                <h5 class="mb-0">Your Order Summary</h5>
               </div>
               <div>
                 <div class="d-flex flex-row padding-B-4 gap-14 margin-B-8">
@@ -251,22 +510,16 @@
                     <img src="assets/images/mr57.png" />
                   </div>
                   <div class="w-full">
-                    <div class="product-info">
-                      <div class="d-flex item-center justify-between">
-                        <h6>Wi-Fi 7 with multi gigabit Ethernet</h6>
-                        <h6>10</h6>
+                    <div class="product-info border-0">
+                      <div class="d-flex justify-between">
+                        <h6 class="mb-0">
+                          Wi-Fi 7 with multi gigabit Ethernet
+                        </h6>
+                        <h6 class="text-nowrap">USD 20,000.00</h6>
                       </div>
-                      <div class="d-flex item-center justify-between">
-                        <p class="body-text-md">MR44-HW</p>
-                        <p>USD 20,000.00</p>
-                      </div>
-                      <div>
-                        <a
-                          class="text-link text-change font-400"
-                          onclick="toggleActive()"
-                          ><span class="hide">[-] Hide</span
-                          ><span class="show">[+] Show</span> Product Details</a
-                        >
+                      <div class="d-flex item-center justify-between mb-2">
+                        <p class="body-text-md mb-0 p-0">Quantity</p>
+                        <p class="body-text-md mb-0 p-0">10</p>
                       </div>
                     </div>
                     <!--Hidden product-->
@@ -298,61 +551,57 @@
                     <!-- / Hidden product-->
                   </div>
                 </div>
-                <div class="d-flex flex-row padding-B-4 gap-14 margin-B-8">
+                <div class="d-flex flex-row gap-14">
                   <div class="product-img">
                     <img src="assets/images/router.png" />
                   </div>
                   <div class="w-full">
-                    <div class="product-info">
-                      <div class="d-flex item-center justify-between">
-                        <h6>Wi-Fi 6E Ultra-high-performance</h6>
-                        <h6>10</h6>
+                    <div class="product-info border-0">
+                      <div class="d-flex justify-between">
+                        <h6 class="mb-0">Wi-Fi 7E never looked this good</h6>
+                        <h6 class="text-nowrap ms-3">USD 20,000.00</h6>
                       </div>
-                      <div class="d-flex item-center justify-between">
-                        <p class="body-text-md">MR44-HW</p>
-                        <p>USD 20,000.00</p>
-                      </div>
-                      <div>
-                        <a class="text-link text-change font-400"
-                          ><span class="hide">[-] Hide</span
-                          ><span class="show">[+] Show</span> Product Details</a
-                        >
+                      <div class="d-flex item-center justify-between mb-2">
+                        <p class="body-text-md mb-0 p-0">Quantity</p>
+                        <p class="body-text-md mb-0 p-0">10</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <hr class="margin-TB-18" />
+              <hr class="my-3" />
               <table>
                 <tbody>
                   <tr>
-                    <td class="padding-B-16">
-                      <h6 class="font-400">Total List Price</h6>
+                    <td>
+                      <h6 class="font-400 text-secondary-default">Subtotal</h6>
                     </td>
-                    <td class="text-right padding-B-16">
-                      <h6 class="font-400">34500.00</h6>
+                    <td class="text-right text-secondary-default">
+                      <h6 class="font-400">USD 34,500.00</h6>
                     </td>
                   </tr>
                   <tr>
-                    <td><h6 class="font-400">Discount (100%)</h6></td>
-                    <td class="text-right">
-                      <h6 class="font-400">34500.00</h6>
+                    <td>
+                      <h6 class="font-400 mb-0 text-secondary-default">Discount</h6>
+                    </td>
+                    <td class="text-right text-secondary-default">
+                      <h6 class="font-400 mb-0">USD 34,500.00</h6>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <hr class="margin-TB-18" />
-              <div class="padding-B-4 d-flex item-center justify-between">
-                <h3>Order Total</h3>
-                <h4>USD 20,000</h4>
+              <div class="border-1-5 my-3"></div>
+              <div class="padding-B-4 pt-2 d-flex item-center justify-between">
+                <h3 class="mb-0 fs-4 fw-normal">Order Total</h3>
+                <h4 class="mb-0 fs-4 fw-normal">USD 0.00</h4>
               </div>
-              <hr class="margin-TB-10" />
-              <div class="padding-T-14">
+              <div class="border-1-5 my-4"></div>
+              <div>
                 <button
-                  class="btn btn-primary w-full btn-lg"
+                  class="btn btn-primary btn-lg w-full rounded-pill"
                   onclick="location.href='checkout-giveaway-success.html'"
                 >
-                  Submit for Approval
+                  Place Order
                 </button>
               </div>
             </div>
@@ -369,5 +618,28 @@
     <script src="assets/js/drawer.js"></script>
     <script src="assets/js/dropdown.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkoutForms = document.querySelectorAll(".checkout-form");
+
+        checkoutForms.forEach((form) => {
+          const editBtn = form.querySelector(".edit-form-btn");
+          const cancelBtns = form.querySelectorAll(".form-cancel");
+          const checkoutFormBody = form.querySelector(".checkout-form-body");
+
+          editBtn.addEventListener("click", function () {
+            checkoutFormBody.classList.add("active");
+            editBtn.classList.add("d-none");
+          });
+
+          cancelBtns.forEach((btn) => {
+            btn.addEventListener("click", function () {
+              checkoutFormBody.classList.remove("active");
+              editBtn.classList.remove("d-none");
+            });
+          });
+        });
+      });
+    </script>
   </body>
 </html>

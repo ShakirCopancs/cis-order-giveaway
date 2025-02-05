@@ -396,16 +396,19 @@ table td {
   border: 1px solid var(--cs-border-color);
   width: 100%;
   border-radius: 4px;
-  height: 30px;
+  height: 40px;
   font-size: 14px;
   color: #1b1c1d;
 }
 .text-input:hover {
-  border-color: #8E8E8E;
+  border-color: #8e8e8e;
 }
 .text-input:focus {
-  border-color: #8E8E8E;
-  outline: 2px solid #0070D2;
+  border-color: #8e8e8e;
+  outline: 2px solid #0070d2;
+}
+.text-input .quantity-input {
+  height: 30px;
 }
 
 .search-lg input {
@@ -563,7 +566,7 @@ table td {
   color: #8e8e8e;
 }
 .sort-by.disable-btn .cs-icon-sort:before {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 .sort-by.disable-btn:hover {
   background: #ebebeb;
@@ -599,16 +602,16 @@ table td {
   box-shadow: var(--cs-btn-focus-shadow-rgb);
 }
 .btn.btn-outline-primary {
-  background-color: #FFF;
-  border: 1px solid #0070D2;
-  color: #0070D2;
+  background-color: #fff;
+  border: 1px solid #0070d2;
+  color: #0070d2;
   font-size: 12px;
   padding: 4px 16px;
   line-height: 16px;
 }
 .btn.btn-outline-primary:hover {
-  background-color: #0070D2;
-  color: #FFF;
+  background-color: #0070d2;
+  color: #fff;
   box-shadow: var(--cs-btn-focus-shadow-rgb);
 }
 .btn.btn-text {
@@ -626,13 +629,13 @@ table td {
   box-shadow: var(--cs-btn-focus-shadow-rgb);
 }
 .btn.btn-dark-secondary {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   border: none;
-  color: #8E8E8E;
-  border: 1px solid #EBEBEB;
+  color: #8e8e8e;
+  border: 1px solid #ebebeb;
 }
 .btn.btn-dark-secondary:hover {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   box-shadow: var(--cs-btn-focus-shadow-rgb);
 }
 .btn.btn-disable {
@@ -671,7 +674,7 @@ table td {
   border-radius: 4px;
 }
 .drop-down-list ul li:hover {
-  background: #F4F5F6;
+  background: #f4f5f6;
 }
 .drop-down-list ul li .cs-icon-sign-out {
   margin-right: 8px;
@@ -712,7 +715,7 @@ table td {
   background: FEF7EC;
 }
 .alert-section.alert-warning-weaker {
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
 }
 
 .select-dd-hidden {
@@ -942,20 +945,20 @@ table td {
   line-height: 16px;
   padding: 6px;
   border-radius: 50%;
-  color: #1B1C1D;
+  color: #1b1c1d;
   width: 26px;
   display: inline-block;
   text-align: center;
 }
 .ui-datepicker-calendar .ui-state-hover {
-  background: #D7EAFC;
+  background: #d7eafc;
 }
 .ui-datepicker-calendar .ui-state-active {
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
-  color: #FFFFFF;
-  background: #0070D2;
+  color: #ffffff;
+  background: #0070d2;
 }
 
 .form-check-input[type=checkbox] {
@@ -2014,7 +2017,7 @@ a {
   font-weight: 500;
   line-height: 16px;
   position: relative;
-  color: #8E8E8E;
+  color: #8e8e8e;
   padding-right: 16px;
   margin-right: 8px;
 }
@@ -2042,7 +2045,7 @@ a {
   display: flex;
   align-items: center;
   padding: 0 8px;
-  border-left: 1px solid #D6D6D6;
+  border-left: 1px solid #d6d6d6;
   font-size: 0.875rem;
   gap: 5px;
 }
@@ -2068,7 +2071,7 @@ a {
 }
 
 .header-surface {
-  background: #0070D2;
+  background: #0070d2;
   padding: 12px 40px;
   display: flex;
   justify-content: space-between;
@@ -2086,7 +2089,7 @@ a {
   font-size: 14px;
   font-weight: 500;
   line-height: 16.8px;
-  color: #D7EAFC;
+  color: #d7eafc;
   margin-bottom: 5px;
 }
 .header-surface h3 {
@@ -2100,7 +2103,7 @@ a {
   padding: 10.5px 0;
 }
 .header-surface .header-account-col .avtar {
-  background: #00509E;
+  background: #00509e;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -2117,13 +2120,13 @@ a {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  color: #F4F5F6;
+  color: #f4f5f6;
 }
 .header-surface .header-account-col .user-details h5 {
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
-  color: #F4F5F6;
+  color: #f4f5f6;
 }
 .header-surface .header-account-col .user-details .cs-icon-chevron-up {
   position: absolute;
@@ -2308,15 +2311,17 @@ a {
 }
 
 .key {
-  font-size: 12px;
-  line-height: 16px;
-  color: #606162;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .value {
   font-size: 14px;
+  font-weight: 400;
   line-height: 20px;
-  color: #1b1c1d;
+  color: #606162;
+  margin-top: 2px;
 }
 
 .start-expiry-date {
@@ -2516,6 +2521,7 @@ a {
   justify-content: space-between;
 }
 .product-item-head .text-input {
+  height: 30px;
   width: 48px;
   text-align: center;
 }
@@ -2523,7 +2529,7 @@ a {
 .product-item-desc {
   padding-bottom: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px dashed #D6D6D6;
+  border-bottom: 1px dashed #d6d6d6;
 }
 
 .product-addon-desc {
@@ -2614,7 +2620,7 @@ a {
   border: 3px solid #fff;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 8px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   width: 86px;
   height: 70px;
   display: flex;
@@ -2885,11 +2891,11 @@ select {
   color: var(--cs-body-color);
 }
 .alert.alert-warning {
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
 }
 
 .badge.text-bg-warning {
-  background-color: #C6800F !important;
+  background-color: #c6800f !important;
   color: #fff !important;
 }
 

@@ -194,16 +194,22 @@ table td {
   border: 1px solid var(--cs-border-color);
   width: 100%;
   border-radius: 4px;
-  height: 30px;
+  height: 40px;
   font-size: 14px;
   color: #1b1c1d;
+  position: relative;
 }
 .text-input:hover {
-  border-color: #8E8E8E;
+  border-color: #8e8e8e;
 }
 .text-input:focus {
-  border-color: #8E8E8E;
-  outline: 2px solid #0070D2;
+  border-color: #8e8e8e;
+  outline: 2px solid #0070d2;
+}
+.text-input .input-icon-right {
+  position: absolute;
+  right: 14px;
+  top: 15px;
 }
 
 .search-lg input {
@@ -361,7 +367,7 @@ table td {
   color: #8e8e8e;
 }
 .sort-by.disable-btn .cs-icon-sort:before {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 .sort-by.disable-btn:hover {
   background: #ebebeb;
@@ -397,16 +403,16 @@ table td {
   box-shadow: var(--cs-btn-focus-shadow-rgb);
 }
 .btn.btn-outline-primary {
-  background-color: #FFF;
-  border: 1px solid #0070D2;
-  color: #0070D2;
+  background-color: #fff;
+  border: 1px solid #0070d2;
+  color: #0070d2;
   font-size: 12px;
   padding: 4px 16px;
   line-height: 16px;
 }
 .btn.btn-outline-primary:hover {
-  background-color: #0070D2;
-  color: #FFF;
+  background-color: #0070d2;
+  color: #fff;
   box-shadow: var(--cs-btn-focus-shadow-rgb);
 }
 .btn.btn-text {
@@ -424,13 +430,13 @@ table td {
   box-shadow: var(--cs-btn-focus-shadow-rgb);
 }
 .btn.btn-dark-secondary {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   border: none;
-  color: #8E8E8E;
-  border: 1px solid #EBEBEB;
+  color: #8e8e8e;
+  border: 1px solid #ebebeb;
 }
 .btn.btn-dark-secondary:hover {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   box-shadow: var(--cs-btn-focus-shadow-rgb);
 }
 .btn.btn-disable {
@@ -469,7 +475,7 @@ table td {
   border-radius: 4px;
 }
 .drop-down-list ul li:hover {
-  background: #F4F5F6;
+  background: #f4f5f6;
 }
 .drop-down-list ul li .cs-icon-sign-out {
   margin-right: 8px;
@@ -510,7 +516,7 @@ table td {
   background: FEF7EC;
 }
 .alert-section.alert-warning-weaker {
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
 }
 
 .select-dd-hidden {
@@ -740,20 +746,20 @@ table td {
   line-height: 16px;
   padding: 6px;
   border-radius: 50%;
-  color: #1B1C1D;
+  color: #1b1c1d;
   width: 26px;
   display: inline-block;
   text-align: center;
 }
 .ui-datepicker-calendar .ui-state-hover {
-  background: #D7EAFC;
+  background: #d7eafc;
 }
 .ui-datepicker-calendar .ui-state-active {
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
-  color: #FFFFFF;
-  background: #0070D2;
+  color: #ffffff;
+  background: #0070d2;
 }
 
 .form-check-input[type=checkbox] {

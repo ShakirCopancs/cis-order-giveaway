@@ -411,7 +411,35 @@ table td {
 .text-input .input-icon-right {
   position: absolute;
   right: 14px;
-  top: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.text-input .input-textarea {
+  padding: 10px 16px;
+  resize: none;
+  height: 80px;
+}
+
+input.form-checkbox {
+  border-radius: 0.25em;
+  width: 16px;
+  height: 16px;
+  background-color: var(--background-surface-default);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-print-color-adjust: exact;
+  border: 1px solid var(--border-default);
+  cursor: pointer;
+}
+
+input.form-checkbox:checked {
+  background-image: url("../images/tick-icon.svg");
+  background-color: var(--background-accent-default, #f0f0f0);
+  border-color: var(--border-accent-default, #4caf50);
 }
 
 .search-lg input {
@@ -1985,6 +2013,62 @@ body.body-bg-gray {
 
 .fs-30 {
   font-size: 30px;
+}
+
+.btn {
+  border: 0;
+  padding: 0;
+  color: #0070d2;
+}
+.btn .btn-primary-lg {
+  padding: 8px 40px;
+  border-radius: 20px;
+  background: #0070d2;
+  color: #fff;
+  font-size: 16px;
+}
+.btn .btn-outline-lg {
+  height: 40px;
+  padding: 8px 40px;
+  border-radius: 20px;
+  border: 1px solid #0070d2;
+  background: #fff;
+  color: #0070d2;
+  font-size: 16px;
+}
+.btn .btn-primary-md {
+  height: 40px;
+  padding: 6px 24px;
+  border-radius: 16px;
+  background: #0070d2;
+  color: #fff;
+  font-size: 14px;
+}
+.btn .btn-outline-md {
+  height: 40px;
+  padding: 6px 24px;
+  border-radius: 16px;
+  border: 1px solid #0070d2;
+  background: #fff;
+  color: #0070d2;
+  font-size: 14px;
+}
+.btn .btn-primary-sm {
+  height: 40px;
+  padding: 4px 16px;
+  border-radius: 16px;
+  background: #0070d2;
+  color: #fff;
+  font-size: 12px;
+}
+.btn .btn-outline-sm {
+  height: 40px;
+  padding: 4px 16px;
+  border-radius: 16px;
+  border: 1px solid #0070d2;
+  background: #fff;
+  color: #0070d2;
+  font-size: 12px;
 }
 
 .action-btn li {

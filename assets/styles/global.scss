@@ -53,6 +53,64 @@ body {
 .fs-30 {
   font-size: 30px;
 }
+
+.btn {
+  border: 0;
+  padding: 0;
+  color: #0070d2;
+  .btn-primary-lg {
+    padding: 8px 40px;
+    border-radius: 20px;
+    background: #0070d2;
+    color: #fff;
+    font-size: 16px;
+  }
+  .btn-outline-lg {
+    height: 40px;
+    padding: 8px 40px;
+    border-radius: 20px;
+    border: 1px solid #0070d2;
+    background: #fff;
+    color: #0070d2;
+    font-size: 16px;
+  }
+
+  .btn-primary-md {
+    height: 40px;
+    padding: 6px 24px;
+    border-radius: 16px;
+    background: #0070d2;
+    color: #fff;
+    font-size: 14px;
+  }
+  .btn-outline-md {
+    height: 40px;
+    padding: 6px 24px;
+    border-radius: 16px;
+    border: 1px solid #0070d2;
+    background: #fff;
+    color: #0070d2;
+    font-size: 14px;
+  }
+  .btn-primary-sm {
+    height: 40px;
+    padding: 4px 16px;
+    border-radius: 16px;
+    background: #0070d2;
+    color: #fff;
+    font-size: 12px;
+  }
+  .btn-outline-sm {
+    height: 40px;
+    padding: 4px 16px;
+    border-radius: 16px;
+    border: 1px solid #0070d2;
+    background: #fff;
+    color: #0070d2;
+    font-size: 12px;
+  }
+}
+
 .action-btn {
   li {
     padding-left: 12px;

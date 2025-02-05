@@ -883,7 +883,6 @@ a {
 .checkout-form {
   background: #fff;
   padding: 1.5rem;
-  margin-bottom: 12px;
 }
 .checkout-form-number {
   height: 32px;
@@ -1181,4 +1180,7 @@ select {
 
 .text-primary {
   color: var(--cs-link-color) !important;
+}
+.sep-dashed {
+  border-bottom: 1px dashed #d6d6d6;
 }

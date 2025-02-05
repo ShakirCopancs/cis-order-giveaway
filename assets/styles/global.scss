@@ -80,18 +80,21 @@ body {
 }
 
 /* Size variations */
-[class*="-lg"] {
+[class*="btn-primary-lg"],
+[class*="btn-outline-lg"] {
   padding: 8px 40px;
   border-radius: 20px;
   font-size: 16px;
   font-weight: 500;
 }
 
-[class*="-md"] {
+[class*="btn-primary-md"],
+[class*="btn-outline-md"] {
   padding: 6px 24px;
 }
 
-[class*="-sm"] {
+[class*="btn-primary-sm"],
+[class*="btn-outline-sm"] {
   padding: 4px 16px;
   font-size: 12px;
 }
@@ -881,6 +884,15 @@ a {
   background: #fff;
   padding: 1.5rem;
   margin-bottom: 12px;
+}
+.checkout-form-number {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d7eafc;
+  border-radius: 50%;
 }
 
 .checkout-details {

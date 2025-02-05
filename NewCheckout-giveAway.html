@@ -31,6 +31,16 @@
       .active .form-unfill {
         height: auto;
       }
+      .input-textarea {
+        border: 1px solid var(--cs-border-color);
+        width: 100%;
+        border-radius: 4px;
+        font-size: 14px;
+        color: #1b1c1d;
+        padding: 10px 16px;
+        resize: none;
+        height: 80px !important;
+      }
     </style>
   </head>
 
@@ -292,8 +302,8 @@
                     <div class="d-flex gap-2 align-items-center mt-3">
                       <input
                         type="checkbox"
-                        class=
-                        name=""
+                        class="name"
+                        =""
                         id="saveaddress"
                       />
                       <label for="saveaddress"
@@ -457,7 +467,7 @@
                       >Send additional order submission notifications to the
                       following emails addresses
                     </label>
-                    <textarea class="text-input input-textarea"></textarea>
+                    <textarea class="input-textarea"></textarea>
                     <span class="fs-12 text-secondary">
                       Note: Multiple email addresses can be entered using comma.
                       Format ex xxx@yyy.com, aaa@bbb.com

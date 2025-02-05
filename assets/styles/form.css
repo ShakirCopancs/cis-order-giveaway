@@ -83,21 +83,6 @@ p {
   font-weight: 400;
   line-height: 24px;
 }
-.fs-30 {
-  font-size: 30px;
-}
-
-.fs-18 {
-  font-size: 18px;
-}
-
-.fs-14 {
-  font-size: 14px;
-}
-
-.fs-12 {
-  font-size: 12px;
-}
 
 .body-text {
   font-size: 1rem;
@@ -219,7 +204,7 @@ table td {
 }
 .text-input:focus {
   border-color: #8e8e8e;
-  outline: 2px solid #0070d2;
+  outline: none;
 }
 .text-input .input-icon-right {
   position: absolute;
@@ -227,7 +212,13 @@ table td {
   top: 50%;
   transform: translateY(-50%);
 }
-.text-input .input-textarea {
+
+.input-textarea {
+  border: 1px solid var(--cs-border-color);
+  width: 100%;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #1b1c1d;
   padding: 10px 16px;
   resize: none;
   height: 80px !important;

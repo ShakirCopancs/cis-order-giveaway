@@ -2998,7 +2998,16 @@ select {
   color: var(--cs-body-color);
 }
 .alert.alert-warning {
-  background-color: #fef7ec;
+  background-color: #FEF7EC;
+}
+.alert.alert-danger {
+  background-color: #FFF2F1;
+}
+.alert.alert-info {
+  background-color: #F0F7FC;
+}
+.alert.alert-success {
+  background-color: #F0F8ED;
 }
 
 .badge.text-bg-warning {

@@ -26,372 +26,484 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.cs-icon-success-alert:before {
+  content: "\e956";
+  color: #399e20;
+}
+
+.cs-icon-warning-alert:before {
+  content: "\e957";
+  color: #c6800f;
+}
+
+.cs-icon-error-alert:before {
+  content: "\e958";
+  color: #f4473e;
+}
+
+.cs-icon-info-alert:before {
+  content: "\e959";
+  color: #1990fa;
+}
+
+.cs-icon-shipping-address:before {
+  content: "\e954";
+}
+
+.cs-icon-assign-address:before {
+  content: "\e955";
+  color: #0070d2;
+}
+
 .cs-icon-find-product:before {
   content: "\e951";
   color: #227bb1;
 }
+
 .cs-icon-search-icon:before {
   content: "\e952";
   color: #8e8e8e;
 }
+
 .cs-icon-cart-icon:before {
   content: "\e953";
   color: #0070d2;
 }
+
 .cs-icon-print-1:before {
   content: "\e94c";
 }
+
 .cs-icon-edit-outline:before {
   content: "\e94d";
   color: #0070d2;
 }
+
 .cs-icon-plus:before {
   content: "\e94e";
   color: #0070d2;
 }
+
 .cs-icon-import:before {
   content: "\e94f";
   color: #0070d2;
 }
+
 .cs-icon-minus:before {
   content: "\e950";
   color: #0070d2;
 }
+
 .cs-icon-chevron:before {
   content: "\e949";
 }
+
 .cs-icon-warning:before {
   content: "\e94a";
   color: #c6800f;
 }
+
 .cs-icon-edit:before {
   content: "\e94b";
   color: #0070d2;
 }
+
 .cs-icon-print:before {
   content: "\e948";
   color: #0070d2;
 }
+
 .cs-icon-sign-out:before {
   content: "\e947";
 }
+
 .cs-icon-cart .path1:before {
   content: "\e926";
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path2:before {
   content: "\e928";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path3:before {
   content: "\e929";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path4:before {
   content: "\e92a";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path5:before {
   content: "\e92b";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path6:before {
   content: "\e92f";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path7:before {
   content: "\e930";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path8:before {
   content: "\e931";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path9:before {
   content: "\e932";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path10:before {
   content: "\e933";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path11:before {
   content: "\e934";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path12:before {
   content: "\e935";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path13:before {
   content: "\e936";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path14:before {
   content: "\e937";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path15:before {
   content: "\e938";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path16:before {
   content: "\e939";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path17:before {
   content: "\e93a";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path18:before {
   content: "\e93b";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path19:before {
   content: "\e93c";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path20:before {
   content: "\e93d";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path21:before {
   content: "\e93e";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path22:before {
   content: "\e93f";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path23:before {
   content: "\e940";
   margin-left: -1.2119140625em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-cart .path24:before {
   content: "\e941";
   margin-left: -1.2119140625em;
   color: rgb(90, 170, 150);
 }
+
 .cs-icon-logo:before {
   content: "\e942";
   color: #fff;
 }
+
 .cs-icon-graph .path1:before {
   content: "\e943";
   color: rgb(116, 191, 75);
   opacity: 0.3;
 }
+
 .cs-icon-graph .path2:before {
   content: "\e944";
   margin-left: -1em;
   color: rgb(183, 205, 171);
 }
+
 .cs-icon-graph .path3:before {
   content: "\e945";
   margin-left: -1em;
   color: rgb(116, 191, 75);
 }
+
 .cs-icon-graph .path4:before {
   content: "\e946";
   margin-left: -1em;
   color: rgb(116, 191, 75);
 }
+
 .cs-icon-check-outline:before {
   content: "\e922";
   color: #399e20;
 }
+
 .cs-icon-collapse:before {
   content: "\e923";
 }
+
 .cs-icon-expand:before {
   content: "\e924";
 }
+
 .cs-icon-info-outline:before {
   content: "\e925";
   color: #606162;
 }
+
 .cs-icon-location:before {
   content: "\e92c";
 }
+
 .cs-icon-chevron-right:before {
   content: "\e92d";
   color: #0070d2;
 }
+
 .cs-icon-home-filled:before {
   content: "\e92e";
   color: #0070d2;
 }
+
 .cs-icon-calendar:before {
   content: "\e900";
   color: #0070d2;
 }
+
 .cs-icon-chevron-up:before {
   content: "\e906";
   color: #606162;
 }
+
 .cs-icon-guide-me:before {
   content: "\e907";
   color: #0070d2;
 }
+
 .cs-icon-mail:before {
   content: "\e908";
 }
+
 .cs-icon-phone:before {
   content: "\e909";
 }
+
 .cs-icon-tick-fill:before {
   content: "\e927";
   color: #0070d2;
 }
+
 .cs-icon-delete:before {
   content: "\e921";
   color: #0070d2;
 }
+
 .cs-icon-dna .path1:before {
   content: "\e90c";
   color: rgb(215, 234, 252);
 }
+
 .cs-icon-dna .path2:before {
   content: "\e90d";
   margin-left: -1em;
   color: rgb(0, 112, 210);
 }
+
 .cs-icon-dna .path3:before {
   content: "\e90e";
   margin-left: -1em;
   color: rgb(0, 112, 210);
 }
+
 .cs-icon-dna .path4:before {
   content: "\e90f";
   margin-left: -1em;
   color: rgb(0, 80, 158);
 }
+
 .cs-icon-dna .path5:before {
   content: "\e910";
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-dna .path6:before {
   content: "\e911";
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-dna .path7:before {
   content: "\e912";
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-dna .path8:before {
   content: "\e913";
   margin-left: -1em;
   color: rgb(87, 174, 250);
 }
+
 .cs-icon-dna .path9:before {
   content: "\e914";
   margin-left: -1em;
   color: rgb(251, 171, 44);
 }
+
 .cs-icon-minus-bg .path1:before {
   content: "\e915";
   color: rgb(215, 234, 252);
 }
+
 .cs-icon-minus-bg .path2:before {
   content: "\e916";
   margin-left: -1em;
   color: rgb(0, 112, 210);
 }
+
 .cs-icon-plus-bg .path1:before {
   content: "\e917";
   color: rgb(215, 234, 252);
 }
+
 .cs-icon-plus-bg .path2:before {
   content: "\e918";
   margin-left: -1em;
   color: rgb(0, 112, 210);
 }
+
 .cs-icon-support .path1:before {
   content: "\e919";
   color: rgb(215, 234, 252);
 }
+
 .cs-icon-support .path2:before {
   content: "\e91a";
   margin-left: -1em;
   color: rgb(0, 112, 210);
 }
+
 .cs-icon-support .path3:before {
   content: "\e91b";
   margin-left: -1em;
   color: rgb(0, 112, 210);
 }
+
 .cs-icon-support .path4:before {
   content: "\e91c";
   margin-left: -1em;
   color: rgb(0, 80, 158);
 }
+
 .cs-icon-support .path5:before {
   content: "\e91d";
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-support .path6:before {
   content: "\e91e";
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-support .path7:before {
   content: "\e91f";
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
+
 .cs-icon-support .path8:before {
   content: "\e920";
   margin-left: -1em;
   color: rgb(87, 174, 250);
 }
+
 .cs-icon-opportunity:before {
   content: "\e904";
 }
+
 .cs-icon-sort:before {
   content: "\e90a";
   color: #0070d2;
 }
+
 .cs-icon-check:before {
   content: "\e90b";
   color: #fff;
 }
+
 .cs-icon-clock:before {
   content: "\e901";
   color: #e3241b;
 }
+
 .cs-icon-outline-arrow:before {
   content: "\e902";
   color: #0070d2;
 }
+
 .cs-icon-search:before {
   content: "\e903";
 }
+
 .cs-icon-warning-outline:before {
   content: "\e905";
   color: #fff;

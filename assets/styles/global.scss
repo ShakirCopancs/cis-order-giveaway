@@ -1167,7 +1167,16 @@ select {
   color: var(--cs-body-color);
 
   &.alert-warning {
-    background-color: #fef7ec;
+    background-color: #FEF7EC;
+  }
+  &.alert-danger {
+    background-color: #FFF2F1;
+  }
+  &.alert-info{
+    background-color: #F0F7FC;
+  }
+  &.alert-success{
+    background-color: #F0F8ED;
   }
 }
 
@@ -1181,6 +1190,7 @@ select {
 .text-primary {
   color: var(--cs-link-color) !important;
 }
+
 .sep-dashed {
   border-bottom: 1px dashed #d6d6d6;
 }
